@@ -7,7 +7,7 @@ function verifyToken(req,res,next){
   //  console.log(bearerToken)
     //if bearer token not available
     if(!bearerToken){
-        return res.send({message:"Unahorized access. Plz login to continue"})
+        return res.send({message:"Unauthorized access. Plz login to continue"})
     }
     //extract token from bearer token
     const token=bearerToken.split(' ')[1]
